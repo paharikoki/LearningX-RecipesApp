@@ -1,6 +1,5 @@
 // import library
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:mytestapp/widgets/custom_input.dart';
 
 //class name
@@ -11,12 +10,11 @@ class NewRecipeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'New Recipe',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
+        title: const Text('New Recipe',
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+        centerTitle: true, // Center the title
         leading: IconButton(
-          icon: const Icon(Icons.close, color: Colors.red),
+          icon: const Icon(Icons.close, color: Colors.black),
           onPressed: () {
             // Close action
           },

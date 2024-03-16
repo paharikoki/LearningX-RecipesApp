@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mytestapp/pages/home_page.dart';
 import 'package:mytestapp/pages/recipes_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/': (context) => const NewRecipeScreen(),
+        '/': (context) => HomeScreen(),
       },
     );
   }
